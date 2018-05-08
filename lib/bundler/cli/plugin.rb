@@ -25,5 +25,10 @@ module Bundler
     def list
       Bundler::Plugin.list
     end
+
+    desc "update PLUGIN", "Update the specified plugin from source, if the latter is a newer version."
+    def update(plugin)
+      Bundler::Plugin.update(plugin)
+    end
   end
 end
